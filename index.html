@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Crop Advisor</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="subtitle">
+            <img src="leaf.png" alt="leaf logo">
+            <h1>Smart Crop Advisor & Profit Estimator</h1>
+
+            <span>
+                <h3>Weather-based Crop Recommendations & Profit Analysis</h3>
+            </span>
+        </div>
+    </header>
+    <main>
+        <form>
+            <div class="container">
+                <h2> Farm Details</h2>
+                <hr>
+                <div class="location">
+                    <h4>Location:</h4>
+                    <input  type="text" placeholder="Enter city or village">
+                </div>
+            </div>
+            <hr>
+            <div class="Season">
+                <label for="Season- select">Season:</label>
+
+                <select name="Season" id="Season-select">
+                    <option value="">Select season </option>
+                    <option value="Kharif">Kharif</option>
+<option value="Rabi">Rabi</option>
+<option value="Zaid">Zaid</option>
+                </select>
+            </div>
+            <hr>
+            <div class="Soil">
+                <label for="Soil-Type">Soil Type:</label>
+
+                <select name="Soil" id="Soil-Type">
+                    <option value="">Select soil type </option>
+                    <option value="Loamy">Loamy</option>
+<option value="Clay">Clay</option>
+<option value="Sandy">Sandy</option>
+                </select>
+            </div>
+            <hr>
+            <div class="area ">
+                <h4>Land Area (acres):</h4>
+               <input type="text" placeholder="e.g. 5">
+            </div>
+
+            <hr>
+            <button type="submit">Get Recommendation</button>
+            </div>
+        </form>
+
+
+        </div>
+        <section class="result-analysis">
+            <h2> Analysis Result</h2>
+            <div class="weather-box">
+                <h3> Weather Forecast</h3>
+                <p> Rainfall: ---mm</p>
+                <p>Temperature:---°C </p>
+            </div>
+            <div class="alert">
+                <h3>⚠️ Weather Alert </h3>
+                <p>No alerts yet</p>
+            </div>
+            <div class="crop-result"></div>
+            <h3>🌱 Recommended Crops</h3>
+            <div class="crop-card">
+                <h4>Crop Name</h4>
+                <p>Expected Production: -- kg</p>
+                <p>Market Price: ₹ -- /kg</p>
+                <p>Revenue: ₹ --</p>
+                <p>Net Profit: ₹ --</p>
+            </div>
+            <hr>
+            <div class="best-result">
+                <h3> Best Crop:</h3>
+                <p> Best Crop will be shown here</p>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            *All values are estimated. Actual yield and prices may vary.
+        </p>
+        <hr>
+        <p>©2026 Smart Crop Advisor</p>
+
+    </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>
